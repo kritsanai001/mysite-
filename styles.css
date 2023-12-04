@@ -1,0 +1,83 @@
+/* Flex Layout */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: 100%;
+  background-size: cover;
+}
+
+header {
+  padding: 10px 10px;
+  background: linear-gradient(0deg, rgba(96, 96, 96, 0) 0%, rgba(0,0,0,1) 100%);
+}
+
+.nav-login {
+  float: right;
+}
+
+button {
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20px;
+  color: aliceblue;
+  /* background-color: aqua; */
+}
+
+a:hover {
+  color: #ef4a75;
+  text-decoration: underline;
+}
+
+/*.logo {
+  font-size: 40px;
+  color: aliceblue;
+  display: inline;
+}*/
+nav {
+  /* background-color: bisque; */
+  display: inline;
+  /* border: dashed; */
+  padding: 5px;
+}
+main {
+  background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(img/tinder_background.jpeg);
+  background-color:grey;
+  
+}
+
+.card {
+  text-align: center;
+  /* border: dashed; */
+}
+
+.name {
+  color: aliceblue;
+  font-size: 10px;
+  text-align: right;
+  /* border: dashed; */
+}
+
+h1 {
+  display: inline;
+  font-size: 120px;
+  color: rgb(255, 255, 255);
+}
+
+.button-create {
+  padding: 8px 25px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-image: linear-gradient(to right,#ff297b 0%, #ff6036 100%);
+}

@@ -1,0 +1,52 @@
+นาย กฤษนัย ลือเรื่อง
+
+วิทยาลัยเทคนิคขอนเเก่น
+
+
+// lab 6
+let str = '31 45 12 67 34 86 23 37 19 41';
+let sum = str.split(' ').map(Number).filter(num => num < 40).reduce((acc, num) => acc + num, 0);
+console.log(sum);
+********************************************************************************************************
+// lab 1 (cont.)
+// สร้าง Array ของชื่อ
+const array = [
+ { name: 'apple', age: 14 },
+ { name: 'banana', age: 18 },
+ { name: 'watermelon', age: 32 }
+];
+
+// ใช้ arr.map เพื่อสร้าง Array ใหม่
+var result = array.map(item => item.name);
+
+// แสดงผลลัพธ์
+console.log(result);
+ // ผลลัพธ์: ["apple", "banana", "watermelon"]
+**********************************************************************************************************
+
+// LAB 5
+const arr = [
+    { name: 'John', age: 25 },
+    { name: 'Leon', age: 26 },
+    { name: 'Mick', age: 29 },
+    { name: 'Pete', age: 30 },
+    { name: 'Mary', age: 28 }
+];
+arr.sort((a, b) => a.age - b.age);
+console.log(arr);
+************************************************************************************************************
+// lab1
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+};
+let values = Object.values(salaries);
+let sum1 = values.reduce((acc, value) => acc + value, 0);
+console.log("Object-values " + sum1);
+let keys = Object.keys(salaries);
+let entries = Object.entries(salaries);
+let sum2 = keys.reduce((acc, key) => acc + salaries[key], 0);
+console.log("Object-keys" + sum2);
+let sum3 = entries.reduce((acc, [key, value]) => acc + value, 0);
+console.log("Object-entries" + sum3);
